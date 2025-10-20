@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 @customElement('text-input')
@@ -39,10 +39,10 @@ export class TextInput extends LitElement {
     return html`
       <input
         .type=${this.type}
-        .placeholder=${this.placeholder}
+        .placeholder=${this.placeholder || nothing}
         .name=${this.name}
         .value=${this.value}
-        .autocomplete=${this.autocomplete}
+        .autocomplete=${this.autocomplete || nothing}
         ?disabled=${this.disabled}
         ?required=${this.required}
         @input=${this._onInput}
