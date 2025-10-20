@@ -7,5 +7,10 @@ my-element.js
 my-element.js.map
 my-element.d.ts
 my-element.d.ts.map
+text-input.js
+text-input.js.map
+text-input.d.ts
+text-input.d.ts.map
 # only generated for size check
 my-element.bundled.js
+text-input.bundled.js
